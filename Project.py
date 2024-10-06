@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the Excel file
-file_path = 'https://github.com/AbdulrahmanAbdull/repo/blob/main/T.xlsx'
+file_path = 'T.xlsx'
 
 # Option 1: Using pd.ExcelFile to access sheet names
 xls = pd.ExcelFile(file_path)  # Load the Excel file
