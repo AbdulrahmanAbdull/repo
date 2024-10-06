@@ -1,10 +1,11 @@
 import pandas as pd
+import openpyxl
 
 # Load the Excel file
 file_path = 'T.xlsx'
 
 # Option 1: Using pd.ExcelFile to access sheet names
-xls = pd.ExcelFile(file_path)  # Load the Excel file
+xls = pd.ExcelFile(file_path,engine='openpyxl')  # Load the Excel file
 sheet_names = xls.sheet_names  # Get the names of the sheets
 #print(sheet_names)
 
